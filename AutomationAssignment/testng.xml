@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Scripting Assignment">
+	<parameter name="url" value="http://www.westpac.co.nz/" />
+	<parameter name="browser" value="Firefox" />
+	<test name="Test Setup">
+		<classes>
+			<class name="com.westpac.tests.base.BaseTest" />
+			<class name="com.westpac.tests.functionality.HomePageFunctionalityTest" />
+			<class name="com.westpac.tests.functionality.CurrencyConversionFunctionalityTest" />
+		</classes>
+	</test>
+</suite>

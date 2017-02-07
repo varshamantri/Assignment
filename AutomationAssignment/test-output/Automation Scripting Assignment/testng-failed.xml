@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Scripting Assignment]">
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="url" value="http://www.westpac.co.nz/"/>
+  <test name="Test Setup(failed)">
+    <classes>
+      <class name="com.westpac.tests.functionality.CurrencyConversionFunctionalityTest">
+        <methods>
+          <include name="tc02_negative_verifyBlankAmountEntered" invocation-numbers="0 1 2 3 4"/>
+          <include name="tc03_positive_verifyConversionFunctionality" invocation-numbers="0 1 2 3 4"/>
+          <include name="testSetUp"/>
+          <include name="tc01_positive_verifyCurrencyConversionPageTitle"/>
+        </methods>
+      </class> <!-- com.westpac.tests.functionality.CurrencyConversionFunctionalityTest -->
+      <class name="com.westpac.tests.base.BaseTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.westpac.tests.base.BaseTest -->
+      <class name="com.westpac.tests.functionality.HomePageFunctionalityTest">
+        <methods>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- com.westpac.tests.functionality.HomePageFunctionalityTest -->
+    </classes>
+  </test> <!-- Test Setup(failed) -->
+</suite> <!-- Failed suite [Automation Scripting Assignment] -->
